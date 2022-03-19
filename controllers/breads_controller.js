@@ -55,7 +55,7 @@ breads.put('/:arrayIndex', (req, res) => {
 })
 
 // EDIT
-breads.get('/:indexArray/edit', (req, res) => {
+breads.get('/:id/edit', (req, res) => {
   Bread.findById(req.params.id).then (foundBread => {
     res.render('edit', {
       bread: foundBread
