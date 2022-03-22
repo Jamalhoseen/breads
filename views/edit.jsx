@@ -22,6 +22,17 @@ function Edit ({bread}) {
             name="image"
             id="image"
             defaultValue= {bread.image}/>
+
+          <label htmlFor="baker">Baker</label>
+          <select name="baker" id="baker" defaultValue={bread.baker}>
+            <option value="Rachel">Rachel</option>
+            <option value="Monica">Monica</option>
+            <option value="Joey">Joey</option>
+            <option value="Chandler">Chandler</option>
+            <option value="Ross">Ross</option>
+            <option value="Phoebe">Phoebe</option>
+          </select>
+
           <label htmlFor="hasGluten">Has Gluten?</label>
           <input
             type="checkbox"
